@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signup Form</title>
+</head>
+<body>
+    <main>
+        <form action="return false;"> <!-- Not meant for submission -->
+            <h1>Sign Up</h1>
+            <div class="field">
+                <p class="ital">Required*</p>
+                <input class="inputs" type="text" id="fName" placeholder="First Name">
+            </div>
+            <div class="field">
+                <p class="ital">Required*</p>
+                <input class="inputs" type="text" id="lName" placeholder="Last Name">
+            </div>
+            <div class="field">
+                <p class="ital">Required*</p>
+                <input class="inputs" type="email" id="email" placeholder="Email">
+            </div>
+            <div class="field">
+                <p class="ital">Required*</p>
+                <input class="inputs" type="password" id="password" placeholder="Password">
+            </div>
+            <div class="field">
+                <p class="ital">Required*</p>
+                <input class="inputs" type="password" id="repeatPassword" placeholder="Repeat Password">
+            </div>
+            <p id="errorMsg" class="text">Password must be at least 10 characters long with one upper and lower case letter, a number, and a special symbol ($, %, &, #, @, !)</p>
+            <button type="button" onclick="createAccount();">Signup</button>
+            <h3>Or <a href="login.html">Login.</a></h3>
+        </form>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

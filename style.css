@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 115, 0)
+}
+
+h3 {
+    color: rgb(255, 115, 0);
+}
+
+a {
+    color: rgb(255, 115, 0);
+}
+
+a:hover {
+    color: rgb(250, 95, 0);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 700px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(240, 240, 240);
+}
+
+form.login {
+    height: 400px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 18px;
+    width: 400px;
+    background-color: rgb(252, 252, 252);
+}
+
+input:focus {
+    border: 1px solid rgb(255, 115, 0);
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(255, 115, 0, 0.5);
+}
+
+.ital {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.text {
+    font-size: 12px;
+    color: rgb(122, 122, 122);
+    width: 300px;
+}
+
+button {
+    width: 180px;
+    height: 70px;
+    font-size: 32px;
+    border: none;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(250, 95, 0);
+}
+
+
+/* Small devices (phones) */
+@media only screen and (max-width: 360px) {
+    form {
+        width: 90%;
+    }
+    input {
+        width: 100%;
+    }
+    .text {
+        width: 250px;
+    } 
+}
+/* Small to medium sized phones */
+@media only screen and (max-width: 480px) {
+    form {
+        width: 270px;
+    }
+    input {
+        width: 300px;
+    }
+}
+
+/* Large devices (desktops, large laptops) */
+@media only screen and (max-width: 1280px) {
+    form {
+        height: 650px;
+    }
+}
